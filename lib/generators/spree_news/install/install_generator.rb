@@ -9,7 +9,7 @@ module SpreeNews
 
       def add_stylesheets
         inject_into_file "app/assets/stylesheets/store/all.css.scss", " *= require store/spree_news\n", :before => /\*\//, :verbose => true
-        inject_into_file "app/assets/stylesheets/admin/all.css.scss", " *= require admin/spree_news\n", :before => /\*\//, :verbose => true
+        inject_into_file "app/assets/stylesheets/admin/all.css", " *= require admin/spree_news\n", :before => /\*\//, :verbose => true
       end
 
       def add_migrations
