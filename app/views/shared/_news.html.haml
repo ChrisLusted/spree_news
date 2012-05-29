@@ -5,7 +5,7 @@
         - Spree::Post.published.each do |post|
           %li
             %div
-              = post.description
+              = post.rendered_desc
 
 :javascript
   $(function(){
