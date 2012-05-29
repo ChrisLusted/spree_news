@@ -3,9 +3,3 @@ Deface::Override.new(:virtual_path => "spree/layouts/admin",
                      :insert_bottom => "[data-hook='admin_tabs']",
                      :text => "<%= tab(:posts) %>",
                      :disabled => false)
-
-Deface::Override.new(:virtual_path => "spree/pages/index",
-                     :name => "index_news_partial",
-                     :insert_after => "[data-hook='homepage_products']",
-                     :partial => "shared/news",
-                     :disabled => false)
