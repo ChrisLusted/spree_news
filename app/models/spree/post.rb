@@ -4,5 +4,5 @@ class Spree::Post < ActiveRecord::Base
 
   scope :published, lambda { where(:published => true) }
   
-  attr_accessible title, description, published
+  attr_accessible :title, :description, :published
 end
